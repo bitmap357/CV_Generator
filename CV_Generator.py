@@ -13,5 +13,10 @@ label_email.pack()
 entry_email = Entry(window)
 entry_email.pack()
 
+label_phone = Label(window, text="Phone: ")
+label_phone.pack()
+entry_phone = Entry(window)
+entry_phone.pack()
+
 
 window.mainloop()
