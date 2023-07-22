@@ -33,9 +33,15 @@ label_skills.pack()
 entry_skills = Text(window, height=5)
 entry_skills.pack()
 
-label_education = Label(window, text="Education(Enter one skill per line)")
+label_education = Label(window, text="Education(Enter one per line in format 'Degree':'University')")
 label_education.pack()
 entry_education = Text(window, height=5)
 entry_education.pack()
+
+
+label_experience = Label(window, text="Experience(Enter one per line in format 'Job Title':'Description')")
+label_experience.pack()
+entry_experience = Text(window, height=5)
+entry_experience.pack()
 
 window.mainloop()
