@@ -28,4 +28,9 @@ label_website.pack()
 entry_website = Entry(window)
 entry_website.pack()
 
+label_skills = Label(window, text="Skills(Enter one skill per line)")
+label_skills.pack()
+entry_skills = Text(window, height=5)
+entry_skills.pack()
+
 window.mainloop()
