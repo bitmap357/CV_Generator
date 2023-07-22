@@ -18,5 +18,10 @@ label_phone.pack()
 entry_phone = Entry(window)
 entry_phone.pack()
 
+label_address = Label(window, text="Address: ")
+label_address.pack()
+entry_address = Entry(window)
+entry_address.pack()
+
 
 window.mainloop()
