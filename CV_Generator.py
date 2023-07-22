@@ -23,5 +23,9 @@ label_address.pack()
 entry_address = Entry(window)
 entry_address.pack()
 
+label_website = Label(window, text="Website: ")
+label_website.pack()
+entry_website = Entry(window)
+entry_website.pack()
 
 window.mainloop()
