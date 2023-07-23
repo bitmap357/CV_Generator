@@ -2,6 +2,7 @@ from tkinter import *
 
 
 def generate_cv_dpf():
+    name = entry_name.get()
 
 
 
