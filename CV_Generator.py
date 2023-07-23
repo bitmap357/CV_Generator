@@ -1,5 +1,10 @@
 from tkinter import *
 
+
+def generate_cv_dpf():
+
+
+
 window = Tk()
 window.title("CV Generator")
 
