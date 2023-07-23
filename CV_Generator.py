@@ -49,4 +49,8 @@ label_about_me.pack()
 entry_about_me = Text(window, height=5)
 entry_about_me.pack()
 
+button_generate = Button(window, text="Generate CV")
+button_generate.pack()
+
+
 window.mainloop()
