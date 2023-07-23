@@ -44,4 +44,9 @@ label_experience.pack()
 entry_experience = Text(window, height=5)
 entry_experience.pack()
 
+label_about_me = Label(window, text="Experience(Enter one per line in format 'Job Title':'Description')")
+label_about_me.pack()
+entry_about_me = Text(window, height=5)
+entry_about_me.pack()
+
 window.mainloop()
