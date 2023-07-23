@@ -4,6 +4,7 @@ from tkinter import *
 def generate_cv_dpf():
     name = entry_name.get()
     email = entry_email.get()
+    phone_number = entry_phone.get()
 
 
 
