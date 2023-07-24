@@ -21,9 +21,7 @@ def generate_cv_pdf():
         degree, university = line.split(":")
         education.append({'degree': degree.strip(), 'university': university.strip()})
 
-
-
-
+    about_me = entry_about_me.get("1.0", END)
 
 
 window = Tk()
