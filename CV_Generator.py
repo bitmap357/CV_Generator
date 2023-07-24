@@ -27,7 +27,7 @@ def generate_cv_pdf():
 
     # Create QR Code
     qrcode = pyqrcode.create(website)
-
+    qrcode.png("mywebsite.png", scale=6)
 
 
 window = Tk()
