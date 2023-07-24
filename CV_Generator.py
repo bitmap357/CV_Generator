@@ -7,7 +7,7 @@ def generate_cv_pdf():
     phone_number = entry_phone.get()
     address = entry_address.get()
     website = entry_website.get()
-    skills = entry_skills.get("1.0", END).strip()
+    skills = entry_skills.get("1.0", END).strip().split('\n')
 
 
 window = Tk()
