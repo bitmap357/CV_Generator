@@ -13,6 +13,12 @@ def generate_cv_pdf():
     for line in work_experience_lines:
         title, description = line.split(":")
 
+    education_lines = entry_education.get("1.0", END).strip().split('\n')
+    for line in education_lines:
+        degree, university = line.split(":")
+
+
+
 
 
 window = Tk()
