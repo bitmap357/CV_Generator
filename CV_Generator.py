@@ -1,7 +1,7 @@
 from tkinter import *
 
 
-def generate_cv_dpf():
+def generate_cv_pdf():
     name = entry_name.get()
     email = entry_email.get()
     phone_number = entry_phone.get()
