@@ -9,6 +9,9 @@ def generate_cv_pdf():
     website = entry_website.get()
     skills = entry_skills.get("1.0", END).strip().split('\n')
 
+    work_experience_lines = entry_experience.get("1.0", END).strip().split('\n')
+
+
 
 window = Tk()
 window.title("CV Generator")
