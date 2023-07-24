@@ -19,6 +19,8 @@ def generate_cv_pdf():
     education_lines = entry_education.get("1.0", END).strip().split('\n')
     for line in education_lines:
         degree, university = line.split(":")
+        education.append({'degree': degree.strip(), 'university': university.strip()})
+
 
 
 
