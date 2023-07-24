@@ -14,6 +14,7 @@ def generate_cv_pdf():
     work_experience_lines = entry_experience.get("1.0", END).strip().split('\n')
     for line in work_experience_lines:
         title, description = line.split(":")
+        work_experience.append()
 
     education_lines = entry_education.get("1.0", END).strip().split('\n')
     for line in education_lines:
