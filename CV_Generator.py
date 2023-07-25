@@ -25,7 +25,9 @@ class PDFCV(FPDF):
 
         # Adding contact information
         self.set_font("Ariel", "", 10)
-        self.cell(0, 10, address, new_x="LMARGIN", new_y="NEXT", align="L")
+        self.cell(0, 5, f"Email: {email}", new_x="LMARGIN", new_y="NEXT")
+        self.cell(0, 5, f"Phone: {phone_number}", new_x="LMARGIN", new_y="NEXT")
+        self.cell(0, 5, f"Address: {address}", new_x="LMARGIN", new_y="NEXT")
 
         self.output("cv1.pdf")
 
