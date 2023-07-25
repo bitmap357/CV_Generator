@@ -28,6 +28,12 @@ class PDFCV(FPDF):
         self.cell(0, 5, f"Email: {email}", new_x="LMARGIN", new_y="NEXT")
         self.cell(0, 5, f"Phone: {phone_number}", new_x="LMARGIN", new_y="NEXT")
         self.cell(0, 5, f"Address: {address}", new_x="LMARGIN", new_y="NEXT")
+        
+        # Skills
+        self.ln(10)
+        self.set_font("Ariel", "B", 12)
+        self.cell(0, 5, "Skills", new_x="LMARGIN", new_y="NEXT", align="L")
+
 
         self.output("cv1.pdf")
 
