@@ -44,6 +44,7 @@ def generate_cv_pdf():
         return
 
     cv = PDFCV()
+    cv.generate_cv()
 
 
 window = Tk()
