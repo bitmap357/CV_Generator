@@ -1,7 +1,7 @@
 from tkinter import *
 import pyqrcode
 from fpdf import FPDF
-
+from tkinter import messagebox
 
 
 def generate_cv_pdf():
@@ -31,7 +31,8 @@ def generate_cv_pdf():
     qrcode.png("mywebsite.png", scale=6)
 
     if not name or not email or not phone_number or not address or not skills or not education or not work_experience or not about_me:
-
+        messagebox.showerror("Error", "Please fill in all the details")
+        return
 
 
 
