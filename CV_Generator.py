@@ -43,7 +43,7 @@ def generate_cv_pdf():
         messagebox.showerror("Error", "Please fill in all the details")
         return
 
-
+    cv = PDFCV()
 
 
 window = Tk()
