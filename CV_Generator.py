@@ -7,6 +7,9 @@ class PDFCV(FPDF):
     def header(self):
         self.image("mywebsite.png", 10, 8, 33, title="Portfolio Site")
 
+    def footer(self):
+        pass
+
 def generate_cv_pdf():
     name = entry_name.get()
     email = entry_email.get()
