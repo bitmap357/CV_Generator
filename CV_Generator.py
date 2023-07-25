@@ -17,7 +17,9 @@ class PDFCV(FPDF):
 
         # Displaying name
         self.set_font("Ariel", "B", 26)
-        self.cell(0, 10, name)
+        self.cell(0, 10, name, new_x="LMARGIN", new_y="NEXT", align="C")
+
+
 
 
 
