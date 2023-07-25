@@ -3,6 +3,9 @@ import pyqrcode
 from fpdf import FPDF
 from tkinter import messagebox
 
+class PDFCV(FPDF):
+    def header(self):
+
 
 def generate_cv_pdf():
     name = entry_name.get()
@@ -33,6 +36,7 @@ def generate_cv_pdf():
     if not name or not email or not phone_number or not address or not skills or not education or not work_experience or not about_me:
         messagebox.showerror("Error", "Please fill in all the details")
         return
+
 
 
 
