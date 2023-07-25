@@ -19,8 +19,9 @@ class PDFCV(FPDF):
         self.set_font("Ariel", "B", 26)
         self.cell(0, 10, name, new_x="LMARGIN", new_y="NEXT", align="C")
 
-
-
+        # Adding contact information header
+        self.set_font("Ariel", "B", 12)
+        self.cell(0, 10, "Contact Information", new_x="LMARGIN", new_y="NEXT", align="C")
 
 
 def generate_cv_pdf():
