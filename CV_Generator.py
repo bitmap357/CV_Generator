@@ -44,10 +44,21 @@ class PDFCV(FPDF):
         self.set_font("Ariel", "B", 12)
         self.cell(0, 5, "Work experience", new_x="LMARGIN", new_y="NEXT", align="L")
 
-        # Adding Skills
+        # Adding experience
         self.set_font("Ariel", "", 10)
         for experience in work_experience:
             self.cell(0, 5, "{}: {}".format(experience["title"], experience["description"]),
+                      new_x="LMARGIN", new_y="NEXT")
+
+        # Education
+        self.ln(10)
+        self.set_font("Ariel", "B", 12)
+        self.cell(0, 5, "Education", new_x="LMARGIN", new_y="NEXT", align="L")
+
+        # Adding education
+        self.set_font("Ariel", "", 10)
+        for education_item in education:
+            self.cell(0, 5, "{}: {}".format(education_item["degree"], education_item["university"]),
                       new_x="LMARGIN", new_y="NEXT")
 
         self.output("cv1.pdf")
