@@ -5,7 +5,7 @@ from tkinter import messagebox
 
 class PDFCV(FPDF):
     def header(self):
-
+        self.image("mywebsite.png", 10, 8, 33, title="Portfolio Site")
 
 def generate_cv_pdf():
     name = entry_name.get()
