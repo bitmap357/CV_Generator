@@ -10,7 +10,7 @@ class PDFCV(FPDF):
     def footer(self):
         pass
 
-    def generate_cv(self,):
+    def generate_cv(self,name, email, phone_number, address, skills, work_experience, education, about_me):
 
 
 def generate_cv_pdf():
