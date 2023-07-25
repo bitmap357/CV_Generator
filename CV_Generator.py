@@ -34,6 +34,8 @@ class PDFCV(FPDF):
         self.set_font("Ariel", "B", 12)
         self.cell(0, 5, "Skills", new_x="LMARGIN", new_y="NEXT", align="L")
 
+        # Adding Skills
+        self.set_font("Ariel", "", 10)
 
         self.output("cv1.pdf")
 
