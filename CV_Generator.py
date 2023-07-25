@@ -61,6 +61,15 @@ class PDFCV(FPDF):
             self.cell(0, 5, "{}: {}".format(education_item["degree"], education_item["university"]),
                       new_x="LMARGIN", new_y="NEXT")
 
+        # About me
+        self.ln(10)
+        self.set_font("Ariel", "B", 12)
+        self.cell(0, 5, "About me", new_x="LMARGIN", new_y="NEXT", align="L")
+
+        # Adding about me
+        self.set_font("Ariel", "", 10)
+        self.multi_cell(0, 5, about_me, new_x="LMARGIN", new_y="NEXT")
+
         self.output("cv1.pdf")
 
 
