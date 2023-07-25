@@ -3,6 +3,7 @@ import pyqrcode
 from fpdf import FPDF
 
 
+
 def generate_cv_pdf():
     name = entry_name.get()
     email = entry_email.get()
@@ -28,6 +29,10 @@ def generate_cv_pdf():
     # Create QR Code
     qrcode = pyqrcode.create(website)
     qrcode.png("mywebsite.png", scale=6)
+
+    if not name or not email or not phone_number or not address or not skills or not education or not work_experience or not about_me:
+
+
 
 
 window = Tk()
