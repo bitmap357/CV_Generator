@@ -10,6 +10,9 @@ class PDFCV(FPDF):
     def footer(self):
         pass
 
+    def generate_cv(self):
+
+
 def generate_cv_pdf():
     name = entry_name.get()
     email = entry_email.get()
