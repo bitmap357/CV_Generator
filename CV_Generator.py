@@ -11,6 +11,7 @@ class PDFCV(FPDF):
         pass
 
     def generate_cv(self,name, email, phone_number, address, skills, work_experience, education, about_me):
+        pass
 
 
 def generate_cv_pdf():
