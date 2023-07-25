@@ -21,7 +21,11 @@ class PDFCV(FPDF):
 
         # Adding contact information header
         self.set_font("Ariel", "B", 12)
-        self.cell(0, 10, "Contact Information", new_x="LMARGIN", new_y="NEXT", align="C")
+        self.cell(0, 10, "Contact Information", new_x="LMARGIN", new_y="NEXT", align="L")
+
+        # Adding contact information
+        self.set_font("Ariel", "", 10)
+        self.cell(0, 10, address, new_x="LMARGIN", new_y="NEXT", align="L")
 
         self.output("cv1.pdf")
 
