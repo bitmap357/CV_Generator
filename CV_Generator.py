@@ -15,6 +15,10 @@ class PDFCV(FPDF):
         self.add_page()
         self.ln(20)
 
+        self.set_font("Ariel", "B", 26)
+        self.cell()
+
+
 
 def generate_cv_pdf():
     name = entry_name.get()
