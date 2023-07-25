@@ -15,8 +15,9 @@ class PDFCV(FPDF):
         self.add_page()
         self.ln(20)
 
+        # Displaying name
         self.set_font("Ariel", "B", 26)
-        self.cell()
+        self.cell(0, 10, name)
 
 
 
