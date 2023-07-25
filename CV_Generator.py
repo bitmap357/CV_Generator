@@ -23,6 +23,8 @@ class PDFCV(FPDF):
         self.set_font("Ariel", "B", 12)
         self.cell(0, 10, "Contact Information", new_x="LMARGIN", new_y="NEXT", align="C")
 
+        self.output("cv1.pdf")
+
 
 def generate_cv_pdf():
     name = entry_name.get()
