@@ -39,6 +39,12 @@ class PDFCV(FPDF):
         for skill in skills:
             self.cell(0, 5, f"- {skill}", new_x="LMARGIN", new_y="NEXT")
 
+        # Work experience
+        self.ln(10)
+        self.set_font("Ariel", "B", 12)
+        self.cell(0, 5, "Work experience", new_x="LMARGIN", new_y="NEXT", align="L")
+
+
         self.output("cv1.pdf")
 
 
